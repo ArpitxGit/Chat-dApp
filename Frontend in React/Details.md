@@ -22,4 +22,4 @@
   # Components.js
   ->Exporting all the components together here.
   
-# App.js inside src
+# App.jsx inside src

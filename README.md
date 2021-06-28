@@ -4,7 +4,7 @@ Chat dApp on Avalanche using Solidity and ReactJS
 -> A decentralized Chat Application on Avalanche's Fuji test-network.
 -> The dApp will allow users to connect with other people and chat with them.
 -> Smart contract using Solidity which will be deployed on Avalanche's C-chain.
--> A basic, easy-to-use UI developed using ReactJS.
+-> Easy-to-use UI developed using ReactJS.
 
 # What is Avalanche and Why Avalanche?
  

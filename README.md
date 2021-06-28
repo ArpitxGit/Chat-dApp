@@ -7,7 +7,7 @@ Chat dApp on Avalanche using Solidity and ReactJS
 -> A basic, easy-to-use UI developed using ReactJS.
 
 # What is Avalanche and Why Avalanche?
- # =>
+ 
  Avalanche is an open-source platform for launching decentralized finance applications and enterprise blockchain deployments in one interoperable, highly scalable  ecosystem.
  Developers who build on Avalanche can easily create powerful, reliable, and secure applications and custom blockchain networks with complex rulesets or build on existing private or public subnets.
 
@@ -32,19 +32,19 @@ Basic functionality of our Chat dApp is allowing users to connect with and share
  
  # Account creation
   We will define 3 functions :
-  ->The checkUserExists(pubkey) function is used to check if a user is registered with our application or not. It will help make sure duplicate users are not       created and it will also be called from other functions to check their existence.
+  ->The checkUserExists(pubkey) function is used to check if a user is registered with our application or not. It will help make sure duplicate users are not created and it will also be called from other functions to check their existence.
   ->The createAccount(username) function registers a new user on the platform with the provided username.
   ->The getUsername(pubkey) function will return the username of the given user if it exists.
 
   # Adding friends
   Here also we will define 3 functions :
-  ->The checkAlreadyFriends(pubkey1, pubkey2) function checks whether two users are already friends with each other or not. This is needed to prevent duplicate     channel between the same parties and will also be used to prevent a user from sending messages to other users unless they are friends.
+  ->The checkAlreadyFriends(pubkey1, pubkey2) function checks whether two users are already friends with each other or not. This is needed to prevent duplicate channel between the same parties and will also be used to prevent a user from sending messages to other users unless they are friends.
   ->The addFriend(pubkey, name) function mark the two users as friend if they both are registered on the platform and are already not friends with each other.
   ->The getMyFriendList() function will return an array of friends of the given user.
 
   # Messaging
-  The final part of the Solidity contract will enable the exchange of messages between users. We will divide the task into two functions sendMessage() and            readMessage().
-  ->The sendMessage() function allows a user to send messages to another registered user (friend). This is done with checkUserExists(pubkey) and                      checkAlreadyFriends(pubkey1, pubkey2).
+  The final part of the Solidity contract will enable the exchange of messages between users. We will divide the task into two functions sendMessage() and readMessage().
+  ->The sendMessage() function allows a user to send messages to another registered user (friend). This is done with checkUserExists(pubkey) and checkAlreadyFriends(pubkey1, pubkey2).
   ->The readMessage() function returns the chat history that has happened between the two users so far.
 
   # User Data Collections
@@ -56,4 +56,4 @@ Basic functionality of our Chat dApp is allowing users to connect with and share
   
   We would maintain 2 collections in our database:
   ->userList where all the users on the platform are mapped with their public address.
-  ->allMessages stores the messages. As Solidity does not allow user-defined keys in a mapping, we can instead hash the public keys of the two users. This value      can then be stored in the mapping.
+  ->allMessages stores the messages. As Solidity does not allow user-defined keys in a mapping, we can instead hash the public keys of the two users. This value can then be stored in the mapping.

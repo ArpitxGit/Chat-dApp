@@ -58,3 +58,19 @@ Basic functionality of our Chat dApp is allowing users to connect with and share
   
   ->userList where all the users on the platform are mapped with their public address.
   ->allMessages stores the messages. As Solidity does not allow user-defined keys in a mapping, we can instead hash the public keys of the two users. This value can then be stored in the mapping.
+  
+# Result
+x-special/nautilus-clipboard
+copy
+file:///home/dungexn/Pictures/Screenshot%20from%202021-06-30%2012-01-00.png
+![Screenshot from 2021-06-30 12-01-00](https://user-images.githubusercontent.com/75042859/123912946-44102880-d99b-11eb-8960-8fb575b14601.png)
+
+# Make Sure Of:-
+ ->your account has sufficient balance at fuji block-explorer.
+ ->you have selected the correct account on metamask if you have more than one account connected to the site.
+ ->doublecheck that you have updated the CONTRACT_ADDRESS variable in src/index.js.
+
+# Updates:-
+This dApp has very limited functionality. Improvement can be done by adding functions to delete messages, block users, or create groups of friends.
+We could also optimize the dApp interaction cost with functions to limit the maximum number of messages, or possibly using event log for short messages.
+
